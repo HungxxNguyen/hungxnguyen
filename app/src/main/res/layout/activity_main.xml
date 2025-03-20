@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CDB4E"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo hoặc hình ảnh ứng dụng -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Logo ứng dụng"
+        android:elevation="4dp"
+        android:src="@drawable/khoi"
+        app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+    <!-- Tiêu đề ứng dụng -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Quản Lý Sách"
+        android:textColor="#00695C"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Tên người dùng -->
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Tên người dùng"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Email người dùng -->
+    <TextView
+        android:id="@+id/mailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="email@example.com"
+        android:textColor="#616161"
+        android:textSize="16sp" />
+
+    <!-- Nút Đăng nhập với Google -->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mailTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_background"
+        android:elevation="2dp"
+        android:padding="8dp" />
+
+</RelativeLayout>

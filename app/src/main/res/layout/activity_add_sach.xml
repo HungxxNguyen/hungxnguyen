@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Nút Back -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm sách mới"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Form thêm sách -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/tenSachEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên sách"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ngayXbEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày xuất bản (YYYY-MM-DD)"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/theLoaiEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Thể loại"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/tacGiaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/pick_author_prompt" />
+    </LinearLayout>
+
+    <!-- Nút Save -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>

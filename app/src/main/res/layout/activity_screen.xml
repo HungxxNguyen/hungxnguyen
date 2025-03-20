@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="16dp">
+
+    <!-- Tiêu đề "Welcome" -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Welcome"
+        android:textColor="#00695C"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Container cho các nút -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Cột bên trái -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Nút Manager Sach -->
+            <Button
+                android:id="@+id/managerSachButton"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"
+                android:text="Manager Sách"
+                android:textColor="#00695C"
+                android:textSize="16sp" />
+
+            <!-- Nút Manager Major -->
+            <Button
+                android:id="@+id/managerMajorButton"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"
+                android:text="Manager Chuyên Ngành"
+                android:textColor="#00695C"
+                android:textSize="16sp" />
+
+            <!-- Nút View Profile -->
+            <Button
+                android:id="@+id/viewProfileButton"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"
+                android:text="View Profile"
+                android:textColor="#00695C"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Cột bên phải -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Nút Manager TacGia -->
+            <Button
+                android:id="@+id/managerTacGiaButton"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"
+                android:text="Manager Tác Giả"
+                android:textColor="#00695C"
+                android:textSize="16sp" />
+
+            <!-- Nút Manager Student -->
+            <Button
+                android:id="@+id/managerStudentButton"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"
+                android:text="Manager Sinh Viên"
+                android:textColor="#00695C"
+                android:textSize="16sp" />
+
+            <!-- Nút Sign Out -->
+            <Button
+                android:id="@+id/signOutButton"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_background_signout"
+                android:elevation="4dp"
+                android:text="Sign Out"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Nút Search Location -->
+    <Button
+        android:id="@+id/myLocationButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/buttonContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_background_mylocation"
+        android:elevation="4dp"
+        android:text="Search Location"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</RelativeLayout>

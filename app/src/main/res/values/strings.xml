@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SE173654_NguyenHung</string>
+    <string name="pick_author_prompt">Chọn tác giả</string>
+    <string name="gender_prompt">Chọn giới tính</string>
+    <string name="major_prompt">Chọn chuyên ngành</string>
+
+    <string-array name="gender_array">
+        <item>Nam</item>
+        <item>Nữ</item>
+        <item>Khác</item>
+    </string-array>
+    <string name="client_id">381865480510-av68cnmljvvumdfspvui3c08b43h35j6.apps.googleusercontent.com</string>
+</resources>
